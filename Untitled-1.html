@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Verbs Presentation</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background: #2c3e50;
+            color: white;
+            border-bottom: 5px solid #3498db;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+            font-style: italic;
+        }
+
+        /* Slider Container */
+        .slider {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        .slide {
+            flex: 0 0 100%;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            padding: 40px;
+            box-sizing: border-box;
+            background: #ecf0f1;
+            border-left: 10px solid #3498db;
+            border-right: 10px solid #3498db;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 0;
+            left: 100%; 
+            transition: all 0.5s ease-in-out;
+        }
+        .slide.active {
+            left: 0; 
+        }
+        .slide h2 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .slide p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+        .examples {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 1.1em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .examples p {
+            margin: 5px 0;
+        }
+        .highlight {
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        /* Navigation Buttons */
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-size: 1.5em;
+            z-index: 100;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .nav-btn:hover {
+            background: #2c3e50;
+        }
+        .prev {
+            left: 20px;
+        }
+        .next {
+            right: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #2c3e50;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Modal Verbs</h1>
+    <p> Guide to Understanding Modal Verbs</p>
+</header>
+
+<div class="slider">
+    <!-- Slide 1 -->
+    <div class="slide active">
+        <h2>What are Modal Verbs?</h2>
+        <p>Modal verbs are auxiliary verbs that express necessity, possibility, permission, ability, or advice. They are used to modify the meaning of the main verb in a sentence.</p>
+        <p>Examples of modal verbs include: <span class="highlight">can, could, may, might, shall, should, will, would, must</span>.</p>
+        <div class="examples">
+            <p><strong>Examples:</strong></p>
+            <p>She <span class="highlight">can</span> swim very well.</p>
+            <p>We <span class="highlight">must</span> finish this project by tomorrow.</p>
+            <p>He <span class="highlight">might</span> come to the party later.</p>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+        <h2>Characteristics of Modal Verbs</h2>
+        <p>Modal verbs have unique characteristics that set them apart from other verbs:</p>
+        <ul>
+            <li>They do not change form (no -s, -ed, or -ing endings).</li>
+            <li>They are followed by the base form of the main verb (infinitive without "to").</li>
+            <li>They do not require auxiliary verbs like "do/does" in questions or negatives.</li>
+        </ul>
+        <p>Modal verbs are essential for expressing different levels of certainty, obligation, and possibility.</p>
+        <div class="examples">
+            <p><strong>Examples:</strong></p>
+            <p>✅ She <span class="highlight">can</span> play the piano.</p>
+            <p>❌ She <span class="highlight">cans</span> play the piano.</p>
+        </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+        <h2>Modal Verb: Can</h2>
+        <p>The modal verb <span class="highlight">can</span> is used to express:</p>
+        <ul>
+            <li><strong>Ability:</strong> I <span class="highlight">can</span> swim.</li>
+            <li><strong>Permission:</strong> <span class="highlight">Can</span> I use your phone?</li>
+            <li><strong>Possibility:</strong> It <span class="highlight">can</span> be dangerous.</li>
+        </ul>
+        <p>Using "can" helps you communicate skills, opportunities, or permissions in daily life.</p>
+        <div class="examples">
+            <p><strong>Examples:</strong></p>
+            <p>He <span class="highlight">can</span> drive a car.</p>
+            <p><span class="highlight">Can</span> you help me?</p>
+        </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide">
+        <h2>Modal Verb: Must</h2>
+        <p>The modal verb <span class="highlight">must</span> is used to express:</p>
+        <ul>
+            <li><strong>Obligation:</strong> You <span class="highlight">must</span> wear a seatbelt.</li>
+            <li><strong>Necessity:</strong> We <span class="highlight">must</span> complete the report by Friday.</li>
+            <li><strong>Strong probability:</strong> It <span class="highlight">must</span> be raining outside; I hear thunder.</li>
+        </ul>
+        <div class="examples">
+            <p><strong>Examples:</strong></p>
+            <p>You <span class="highlight">must</span> finish your homework before going out.</p>
+            <p>She <span class="highlight">must</span> be the new teacher; everyone is greeting her.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Navigation Buttons -->
+<button class="nav-btn prev" onclick="prevSlide()">&#10094;</button>
+<button class="nav-btn next" onclick="nextSlide()">&#10095;</button>
+
+
+<footer>
+    <p>Created by Ponlapat Chantanatrakul M.6/3 No.4</p>
+    <p>Joseph Upatham</p>
+</footer>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === index) slide.classList.add('active');
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    // Initialize the first slide
+    showSlide(currentSlide);
+</script>
+
+</body>
+</html>
